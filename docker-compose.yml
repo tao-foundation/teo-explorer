@@ -1,8 +1,8 @@
 version: '2.0'
 
 services:
-  etherchain-light:
+        teo-explorer:
     build: .
     restart: always
     ports:
-      - 3000:3000
+      - 2888:2888
