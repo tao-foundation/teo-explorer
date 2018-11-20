@@ -1,7 +1,10 @@
-# TEO TestNet Explorer
-### TEO TestNet blockchain explorer
+# TEO Explorer2
 
-TEO Explorer is an Blockchain explorer built with NodeJS, Express and Parity. It does not require an external database and retrieves all information on the fly from a backend Ethereum-API based.
+based fork of etherchainlight explorer
+
+### TEO blockchain explorer2
+
+TEO Explorer2 is an Blockchain explorer built with NodeJS, Express and Parity. It does not require an external database and retrieves all information on the fly from a backend Ethereum-API based.
 
 While there are several excellent Ethereum blockchain explorers available (etherscan, ether.camp and etherchain) they operate on a fixed subset of Ethereum networks, usually the mainnet and testnet. Currently there are no network agnostic blockchain explorers available. If you want to develop Dapps on a private testnet or would like to launch a private / consortium network, TEO Explorer will allow you to quickly explore such chains.
 
