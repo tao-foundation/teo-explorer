@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
     }, function(lastBlock, callback) {
       var blocks = [];
       
-      var blockCount = 10;
+      var blockCount = 20;
       
       if (lastBlock.number - blockCount < 0) {
         blockCount = lastBlock.number + 1;
@@ -41,7 +41,7 @@ router.get('/', function(req, res, next) {
     var txs = [];
     blocks.forEach(function(block) {
       block.transactions.forEach(function(tx) {
-        if (txs.length === 10) {
+        if (txs.length === 1000) {
           return;
         }
         txs.push(tx);

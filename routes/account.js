@@ -22,8 +22,10 @@ router.get('/:account', function(req, res, next) {
     }, function(lastBlock, callback) {
       data.lastBlock = lastBlock.number;
       //limits the from block to -1000 blocks ago if block count is greater than 1000
-      if (data.lastBlock > 0x3E8) {
-        data.fromBlock = data.lastBlock - 0x3e8;
+      // if (data.lastBlock > 0x3E8) {
+      if (data.lastBlock > 0x1000)  {
+        // data.fromBlock = data.lastBlock - 0x3e8;
+        data.fromBlock = data.lastBlock - 0x1000;
       } else {
         data.fromBlock = 0x00;
       }
