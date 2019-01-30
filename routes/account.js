@@ -132,7 +132,7 @@ router.get('/:account', function(req, res, next) {
       data.name = config.names[data.address];
     }
     
-    data.blocks = data.blocks.reverse().splice(0, 100);
+    data.blocks = data.blocks.reverse().splice(0, 1000);
     
     res.render('account', { account: data });
   });
